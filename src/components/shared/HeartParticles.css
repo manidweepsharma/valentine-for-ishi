@@ -1,0 +1,15 @@
+.heart-particles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.heart-particle {
+  position: absolute;
+  bottom: -10%;
+  color: var(--color-hot-pink);
+  animation: float-up linear infinite;
+  text-shadow: 0 0 6px rgba(255, 20, 147, 0.4);
+}

@@ -1,0 +1,14 @@
+.floating-hearts {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.floating-heart {
+  position: absolute;
+  bottom: -10%;
+  animation: float-up linear infinite;
+  filter: drop-shadow(0 0 4px currentColor);
+}

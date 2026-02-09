@@ -1,0 +1,31 @@
+:root {
+  /* Primary Romance Palette */
+  --color-deep-red: #8B0000;
+  --color-rose-red: #C41E3A;
+  --color-hot-pink: #FF1493;
+  --color-soft-pink: #FFB6C1;
+  --color-blush: #FFF0F5;
+
+  /* Gold Accents */
+  --color-gold: #FFD700;
+  --color-gold-light: #FAFAD2;
+  --color-gold-dark: #B8860B;
+
+  /* Neutrals */
+  --color-cream: #FFF8F0;
+  --color-parchment: #F5E6D3;
+  --color-dark: #1a0a0a;
+  --color-dark-overlay: rgba(26, 10, 10, 0.85);
+
+  /* Typography */
+  --font-cursive: 'Great Vibes', cursive;
+  --font-body: 'Poppins', sans-serif;
+  --font-handwritten: 'Dancing Script', cursive;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 2rem;
+  --space-xl: 4rem;
+}

@@ -1,0 +1,106 @@
+.love-letter-page {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(160deg, #1a0a0a 0%, #2a1510 50%, #1a0a0a 100%);
+  padding: var(--space-lg) var(--space-md);
+}
+
+.letter-card {
+  background: linear-gradient(145deg, #F5E6D3 0%, #ECD8C0 50%, #E8D0B5 100%);
+  color: #3a2218;
+  max-width: 560px;
+  width: 100%;
+  padding: clamp(2rem, 5vw, 3rem);
+  border-radius: 4px;
+  position: relative;
+  transform: rotate(-1deg);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 30px rgba(0, 0, 0, 0.3),
+    inset 0 0 60px rgba(139, 90, 43, 0.08);
+}
+
+.letter-card::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 1px solid rgba(139, 90, 43, 0.15);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.letter-greeting {
+  font-family: var(--font-cursive);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--color-deep-red);
+  margin-bottom: var(--space-lg);
+}
+
+.letter-paragraph {
+  font-family: var(--font-handwritten);
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  line-height: 1.8;
+  margin-bottom: var(--space-md);
+  color: #4a3020;
+}
+
+.letter-closing {
+  margin-top: var(--space-lg);
+  text-align: right;
+}
+
+.letter-closing-text {
+  font-family: var(--font-handwritten);
+  font-size: 1.1rem;
+  color: #4a3020;
+}
+
+.letter-signature {
+  font-family: var(--font-cursive);
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  color: var(--color-deep-red);
+  margin-top: var(--space-xs);
+}
+
+.letter-seal {
+  position: absolute;
+  bottom: -16px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, #C41E3A 0%, #8B0000 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4), inset 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+.seal-text {
+  font-family: var(--font-cursive);
+  font-size: 1rem;
+  color: var(--color-gold);
+  font-weight: bold;
+}
+
+.letter-continue-btn {
+  margin-top: var(--space-xl);
+  background: transparent;
+  color: var(--color-soft-pink);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 300;
+  padding: 0.8rem 2rem;
+  border: 1px solid rgba(255, 182, 193, 0.3);
+  border-radius: 50px;
+  letter-spacing: 0.05em;
+  transition: border-color 0.3s, color 0.3s;
+}
+
+.letter-continue-btn:hover {
+  border-color: var(--color-hot-pink);
+  color: var(--color-hot-pink);
+}
