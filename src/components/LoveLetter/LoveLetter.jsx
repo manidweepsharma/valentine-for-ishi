@@ -50,7 +50,7 @@ export default function LoveLetter({ onContinue }) {
         </motion.div>
 
         <div className="letter-seal">
-          <span className="seal-text">M&I</span>
+          <span className="seal-text">My Love</span>
         </div>
       </motion.div>
 
